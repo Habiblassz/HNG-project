@@ -21,8 +21,8 @@
 				<div class="right">
 					<ul>
 						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#" class="mobile">About</a></li>
+						<li><a href="#" class="mobile">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -31,30 +31,89 @@
 			<div class="top">
 				<div class="left">
 					<h1>Welcome to my world!</h1>
-					<p>
-						Hello, my name is <span class="main-color">Habib</span> and I'm a
-						front-end developer with 2+ years of experience, specializing in
-						creating custom, pixel-perfect websites with clean code and
-						interactive animations. My expertise is to create the website of
-						your dreams.
+					<p class="body-text">
+						Hello, my name is
+						<span class="main-color" data-testid="slackDisplayName">Habib</span>
+						and I'm a front-end developer with 2+ years of experience,
+						specializing in creating custom, pixel-perfect websites with clean
+						code and interactive animations.
+						<span class="mobile"
+							>My expertise is to create the website of your dreams.</span
+						>
 					</p>
 					<div class="goals">
-						<div class="header">Some of my plans for the next 2 years</div>
 						<div>
-							<span>Build a solid portfolio and brand identity</span>
-							<span>Master version control</span>
-							<span>Gain substantial backend knowledge</span>
-							<span>Understand web security</span>
-							<span>Work on real world projects</span>
-							<span>Network and collaborate</span>
+							<div class="header">Some of my plans for the next 2 years</div>
+							<div class="goal">
+								<span>
+									<i class="fa-solid fa-briefcase"></i>
+									Build a solid portfolio and brand identity
+								</span>
+								<span>
+									<i class="fa-brands fa-square-git"></i>
+									Master version control
+								</span>
+								<span class="mobile">
+									<i class="fa-solid fa-database"></i>
+									Gain substantial backend knowledge
+								</span>
+								<span class="mobile">
+									<i class="fa-solid fa-lock"></i>
+									Understand web security
+								</span>
+								<span class="mobile">
+									<i class="fa-solid fa-list-check"></i>
+									Work on real world projects
+								</span>
+								<span class="mobile">
+									<i class="fa-solid fa-globe"></i>
+									Network and collaborate
+								</span>
+							</div>
+						</div>
+
+						<div class="bottom">
+							<p>Find me on socials</p>
+							<div class="social-icons">
+								<span class="social-icon"
+									><i class="fa-brands fa-twitter"></i
+								></span>
+								<span class="social-icon"
+									><i class="fa-brands fa-github"></i
+								></span>
+								<span class="social-icon"
+									><i class="fa-brands fa-linkedin"></i
+								></span>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="right">
-					<img src="main1 - Copy.jpg" alt="main picture" />
+					<img
+						src="main1 - Copy.jpg"
+						alt="main picture"
+						data-testid="slackProfilePicture"
+						class="mobile" />
 				</div>
 			</div>
-			<div class="bottom"></div>
 		</main>
+		<footer>
+			<p>
+				Created by Lawal Habib
+				<span data-testid="slackEmail">habiblawaltemitope@gmail.com</span>
+			</p>
+			<p>
+				<span class="mobile">Links to checkout:</span>
+				<a href="hng.tech/learn">HNG tech</a> |
+				<a href="keyword.dog">Keyword</a> |
+				<a href="scapanyweb.site">Scrap any site</a>
+			</p>
+			<p>
+				Today is <span class="day" data-testid="currentDay"></span> and the
+				current time is
+				<span class="time" data-testid="currentTimeUTC"></span>
+			</p>
+		</footer>
+		<script src="index.js"></script>
 	</body>
 </html>
